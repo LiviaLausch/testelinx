@@ -1,127 +1,126 @@
+/* Define o estilo padrão para todos os elementos */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; /* Inclui a borda e o preenchimento no cálculo do tamanho total */
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 18px;
-  background-color: #F0F8FF;
-  font-size: 1em;
-  color: #59429d;
+  font-family: Arial, sans-serif; /* Define a família de fontes para o corpo do texto */
+  background-color: #6A5ACD; /* Define a cor de fundo como roxo */
+  margin: 0; /* Define a margem como 0 */
+  padding: 18px; /* Adiciona um preenchimento interno de 18 pixels */
+  font-size: 1em; /* Define o tamanho da fonte como 1em (o tamanho padrão do navegador) */
+  color: #59429d; /* Define a cor do texto como um tom de roxo mais escuro */
 }
 
 header {
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+  color: #fff; /* Define a cor do texto como branco */
+  padding: 20px 0; /* Adiciona um preenchimento superior e inferior de 20 pixels */
+  text-align: center; /* Centraliza o conteúdo do cabeçalho */
 }
 
 .titulo {
-  font-family: sans-serif;
-  color: #380B61;
-  font-family: sans-serif;
-  margin-top: 40px;
-  color: #380B61;
+  text-align: center; /* Centraliza o texto */
+  font-family: sans-serif; /* Define a família de fontes */
+  color: #380B61; /* Define a cor do texto como um tom de roxo */
+  margin-top: 40px; /* Adiciona um espaçamento superior de 40 pixels */
 }
-
 
 .subtitulo {
-  font-family: sans-serif;
-  margin-bottom: 16px;
+  font-family: sans-serif; /* Define a família de fontes */
+  margin-bottom: 16px; /* Adiciona um espaçamento inferior de 16 pixels */
 }
 
+/* Remove a borda padrão do fieldset */
 fieldset {
   border: 0;
 }
 
 .message-box {
-  margin-bottom: 1em;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 1em; /* Adiciona um espaçamento inferior de 1em */
+  display: flex; /* Usa um layout flexível */
+  flex-direction: column; /* Define a direção do layout como coluna */
 }
 
 .form {
-  border: 2px solid #380b61;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 600px;
-  margin-top: 40px;
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 20px 40px #380b6190;
+  border: 2px solid #380b61; /* Adiciona uma borda sólida de 2px com uma cor roxa escura */
+  display: flex; /* Usa um layout flexível */
+  flex-direction: column; /* Define a direção do layout como coluna */
+  justify-content: center; /* Alinha o conteúdo verticalmente ao centro */
+  max-width: 600px; /* Define a largura máxima do formulário como 600 pixels */
+  margin-top: 40px; /* Adiciona um espaçamento superior de 40 pixels */
+  margin: 20px auto; /* Adiciona margens automáticas à esquerda e à direita */
+  background-color: #e6e6fa; /* Define a cor de fundo como um tom de roxo claro */
+  padding: 20px; /* Adiciona um preenchimento interno de 20 pixels */
+  border-radius: 10px; /* Adiciona um raio de borda de 10 pixels para criar cantos arredondados */
+  box-shadow: 0 20px 40px #380b6190; /* Adiciona uma sombra suave */
 }
 
 .grupo {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Adiciona um espaçamento inferior de 20 px */
 }
 
 .input-box {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10 px */
 }
 
 label {
-  display: block;
-  font-weight: bold;
+  display: block; /* Define os rótulos como blocos para que apareçam em uma linha separada */
+  font-weight: bold; /* Define a fonte como negrito */
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  width: 100%; /* Define a largura como 100% para preencher a largura*/
+  padding: 10px; /* Adiciona um preenchimento de 10 px*/
+  border: 1px solid #ccc; /* Adiciona uma borda de 1px sólida com uma cor cinza */
+  border-radius: 8px; /* Adiciona 8 px para cantos arredondados */
 }
 
 textarea {
-  height: 150px;
+  height: 150px; /* Define a altura como 150 px */
 }
 
 .button-box {
-  text-align: center;
-  align-self: flex-end;
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  align-self: flex-end; /* Alinha o botao ao final da pagina*/
 }
 
 button {
-  font-weight: bold;
-  background-color: #2196f3;
-  color: white;
-  padding: 10px 20px;
-  margin: 0 5px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: filter 0.2s;
+  font-weight: bold; /* Define a fonte como negrito */
+  background-color: #2196f3; /* Define a cor de fundo como azul */
+  color: white; /* Define a cor do texto como branco */
+  padding: 10px 20px; /* Adiciona um preenchimento de 10 px na vertical e 20 px na horizontal */
+  margin: 0 5px; /* Adiciona margens de 0 em cima e embaixo, e 5 px nas laterais */
+  border: none; /* Remove a borda */
+  border-radius: 4px; /* Adiciona borda aredondada de 4 px*/
+  cursor: pointer; /* Altera o cursor para um ponteiro quando passa sobre o botão */
+  transition: filter 0.2s; /* Adiciona uma transição mais suave */
 }
 
 button:hover {
-  filter: brightness(0.8);
+  filter: brightness(0.8); /* Reduz a luminosidade do botão quando passa sobre ele */
 }
 
 .secondary-color {
-  background-color: #ddd;
-  color: #333;
+  background-color: #ddd; /* Define a cor de fundo como cinza claro */
+  color: #333; /* Define a cor do texto como cinza escuro */
 }
 
 .whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 999;
+  position: fixed; /* Define a posição fixa do botão */
+  bottom: 20px; /* Define a distância de 20 px da parte inferior do navegador */
+  right: 20px; /* Define a distância de 20 px da margem direita da janela do navegador */
+  background-color: #25d366; /* Define a cor de fundo do botão como verde*/
+  border: none; /* Remove a borda do botão */
+  border-radius: 50%; /* Adiciona borda aredondada de 50%*/
+  padding: 10px; /* Adiciona um preenchimento interno de 10 px */
+  cursor: pointer; /* Altera o cursor do mouse para um ponteiro ao passar sobre o botão */
+  z-index: 999; /* Garante que o botão esteja sempre acima de outros elementos */
 }
 
 .whatsapp-button img {
-  display: block;
+  display: block; /* Define a imagem do botão como um bloco, para que ela ocupe todo o espaço disponível */
 }

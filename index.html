@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Livia</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css"> <!-- Liga o arquivo "style.css" ao documento -->
+    <title>Livia</title> <!-- Define o título da página como "Livia" -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Adiciona o script do EmailJS para envio de emails -->
 </head>
 <body>
   <header>
-    <h1 class="titulo">Formulário</h1>
+    <h1 class="titulo">Formulário</h1> <!-- Título principal da página -->
   </header>
-  <form class="form" id="form">
-    <p class="subtitulo">Complete suas informações:</p>
-    <fieldset class="grupo">
+  <form class="form" id="form"> <!-- Início do formulário -->
+    <p class="subtitulo">Complete suas informações:</p> 
+    <fieldset class="grupo"> <!-- grupa campos relacionados -->
       <div class="input-box">
-        <label for="campoNome"><strong>Nome</strong></label>
+        <label for="campoNome"><strong>Nome</strong></label> <!-- Rótulo para o campo "Nome" -->
         <input
           name="name"
           type="text" id="campoNome"
           placeholder="Digite seu nome aqui"
-          title="Por favor, preencha seu nome."
-          required
-        />
+          title = "Prencha seu nome aqui"
+          required >
+          <!-- campo obrigatório -->
       </div>
-      <div class="input-box">
-        <label for="campoEmail"><strong>Email</strong></label>
+      <div class="input-box"> 
+        <label for="campoEmail"><strong>Email</strong></label> <!-- Rótulo para o campo "Email" -->
         <input
           name="email"
           type="email"
           id="campoEmail"
-          placeholder="seuemail@linx.com"
+          placeholder="seuemail@linx.com" 
           required
-        />
+          ><!-- Campo obrigatório -->
       </div>
     </fieldset>
 
-    <div class="message-box">
+    <div class="message-box"> 
       <label>
-        <strong>Mensagem:</strong>
+        <strong>Mensagem:</strong> <!-- Rótulo para o campo de mensagem -->
       </label>
       <textarea
         name="message"
@@ -47,15 +48,15 @@
       ></textarea>
     </div>
 
-    <div class="button-box">
+    <div class="button-box"> <!-- Caixa de botões -->
       <button type="reset" class="secondary-color">Limpar</button>
-      <button type="submit">Enviar</button>
+      <button type="submit">Enviar</button> 
     </div>       
   </form>
 
-  <button class="whatsapp-button" onclick="openWhatsapp()">
-    <img src="whatsapp-logo.png" height="30" width="30" />
+  <button class="whatsapp-button" onclick="openWhatsapp()"> 
+    <img src="whatsapp-logo.png" height="30" width="30" /> 
   </button>
 </body>
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="script.js"></script> <!-- Vincula o arquivo JavaScript externo -->
 </html>
