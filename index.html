@@ -1,27 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Livia</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
-    <h1>Cadastro</h1>
-    <p>boas vindas</p>
-    <form>
-        <div>
-            <label>Nome</label>
-            <input type="text" nome="nome" id="nome">
-        </div>
-        <div>
-            <label>Email</label>
-            <input type="text" nome="email" id="email">
-        </div>
-        <div>
-            <label>Mensagem</label>
-            <textarea name="mensagem" id="mensagem" cols="100" rows="10"></textarea>
-        </div>
-        
-    </form>
+  <header>
+    <h1 class="titulo">Formulário</h1>
+  </header>
+  <form class="form" id="form">
+    <p class="subtitulo">Complete suas informações:</p>
+    <fieldset class="grupo">
+      <div class="input-box">
+        <label for="campoNome"><strong>Nome</strong></label>
+        <input
+          name="name"
+          type="text" id="campoNome"
+          placeholder="Digite seu nome aqui"
+          title="Por favor, preencha seu nome."
+          required
+        />
+      </div>
+      <div class="input-box">
+        <label for="campoEmail"><strong>Email</strong></label>
+        <input
+          name="email"
+          type="email"
+          id="campoEmail"
+          placeholder="seuemail@linx.com"
+          required
+        />
+      </div>
+    </fieldset>
+
+    <div class="message-box">
+      <label>
+        <strong>Mensagem:</strong>
+      </label>
+      <textarea
+        name="message"
+        id="campoMensagem"
+        placeholder="Digite..."
+      ></textarea>
+    </div>
+
+    <div class="button-box">
+      <button type="reset" class="secondary-color">Limpar</button>
+      <button type="submit">Enviar</button>
+    </div>       
+  </form>
+
+  <button class="whatsapp-button" onclick="openWhatsapp()">
+    <img src="whatsapp-logo.png" height="30" width="30" />
+  </button>
 </body>
+<script type="text/javascript" src="script.js"></script>
 </html>
